@@ -1,0 +1,1 @@
+Repository for Landing Page project at end of CSS module in Odin Project foundation
