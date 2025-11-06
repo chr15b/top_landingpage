@@ -8,14 +8,14 @@ Retrieved 2025-11-06, License - CC BY-SA 4.0
     display: flex;
     flex-direction: column;
     background-color: #1F2937;
+    padding: 16px;    
 }
 
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px;
-}
+  }
 
 
 .header-logo, h1 {
@@ -40,8 +40,7 @@ ul {
 .header-content {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    
+    justify-content: space-between;
 }
 
 .hero {
