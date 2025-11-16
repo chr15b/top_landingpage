@@ -1,60 +1,242 @@
+/* This is to help me see the divs */
+
 /*
-Source - https://stackoverflow.com/q
-Posted by Mulcahy, modified by community. See post 'Timeline' for change history
-Retrieved 2025-11-06, License - CC BY-SA 4.0
+div{
+    border: solid black 2px;
+}
 */
 
-.header {
+html{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+body{
+    margin: 0px;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    align-content: space-between;
+}
+
+/* FIRST SECTION AND HEADER*/
+/*---------------------------*/
+
+*{
+    font-family: "Roboto", sans-serif;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+.first-section {
     background-color: #1F2937;
-    padding: 16px;    
+    flex: 1 1 0;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 80px;
 }
 
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-
-.header-logo, h1 {
-    color: #F9FAF8
-}
-
-.header-logo {
-    font-size: 24px;
-}
-
-ul, p {
-    color: #E5E7EB;
-    font-size: 18px;
-}
-
-ul {
-    list-style-type: none;
-    display: flex;
-    gap: 16px
-}
-
-.header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.hero {
-    width: 420px;
-}
-
-h1 {
+#header1{
     font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
 }
 
-button {
-    background: royalblue;
-    border: 1px solid royalblue;
-    color: white;
-    padding: 8px 32px;
+#subheader1, a{
+    font-size: 18px;
+    color: #E5E7EB;
+    text-align:left;
+
+}
+
+.logo-text{
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.image-text{
+    text-align: center;
+    height: fit-content;
+    color: #F9FAF8;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+
+.first-division{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.content-one{
+    display: flex;
+    padding-right: 15px;
+    flex: 1 1 0;
+    flex-direction: column;
+}
+
+.image-placeholder{
+    display: flex;
+    width: 50%;
+    background-color: rgb(110, 123, 136);
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-button{
+    border-radius: 12px;
+    border: 0cm;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    font-weight: 900;
+    font-size: 15px;
+    flex-basis: 0;
+    max-width: 150px;
+    margin-top: 8px;
+}
+
+/* SECOND SECTION*/
+/*---------------*/
+
+.second-section{
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    flex:1 1 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-content: space-between;
+}
+
+.info-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.second-section-maintext{
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.info-image-one, .info-image-two, .info-image-three, .info-image-four{
+    border: solid #538ae2 4px;
+    border-radius: 12px;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+    background-image: url(./Images/background_image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image-texts{
+    color: rgb(168, 168, 168);
+    text-align: center;
+}
+
+/*THIRD SECTION*/
+
+.third-section{
+    display: flex;
+    justify-content: center;
+    background-color: #E5E7EB;
+    flex:1 1 0;
+    padding: 80px;
+}
+
+.testimonial{
+    width: 800px;
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    font-weight: 300;
+}
+
+.quote_signature{
+    font-style: normal;
+    text-align: right;
+    font-weight: bold;
+}
+
+/*FOURTH SECTION*/
+
+.fourth_section{
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.banner{
+    background-color: #3882F6;
+    border-radius: 12px;
+    width: 900px;
+    height: 100px;
+    padding: 20px 90px;
+    display: flex;
+    gap: 80px;
+}
+
+.banner_texts{
+    align-self: center;
+    justify-self: center;
+}
+
+.banner_headtext{
+    font-weight: bold;
+    color: #E5E7EB;
+    font-size: 25px;
+}
+
+.banner_subtext{
+    color: #E5E7EB;
+}
+
+.banner_button{
+    display: flex;
+    align-self: center;
+    height: 50px;
+    padding-left: 100px;
+}
+
+.action_button{
     border-radius: 10px;
+    width: 180px;
+    height: 50px;
+    border-color: #E5E7EB;
+    background-color: #3882F6;
+    color: #E5E7EB;
+    font-weight: bold;
+    flex-grow: 1;
+    font-size: 20px;
+}
+
+/*FOOTER*/
+
+.footer{
+    background-color:#1F2937;
+    color:#E5E7EB;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
